@@ -1,0 +1,3 @@
+cd bms -> npm run dev
+cd apiBms -> php artisan serve
+cd apiBms -> php artisan schedule:work
