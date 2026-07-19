@@ -1,0 +1,52 @@
+/* Sync Icon Spin */
+.rotate-sync {
+  animation: spinEase 1.2s linear infinite;
+}
+
+@keyframes spinEase {
+  0% {
+    transform: rotate(0deg);
+    animation-timing-function: ease-in;
+  }
+  50% {
+    transform: rotate(720deg);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: rotate(1080deg);
+  }
+}
+
+/* Shine Border Effect */
+.shine-border {
+  position: relative;
+  border-top: 4px solid #034fa5;
+  overflow: hidden;
+}
+
+.shine-border::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -200px;
+  width: 200px;
+  height: 4px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(173, 216, 255, 0.35) 30%,
+    rgba(90, 241, 255, 0.7) 50%,
+    rgba(173, 216, 255, 0.35) 70%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  animation: shineMove 1.5s linear infinite;
+}
+
+@keyframes shineMove {
+  0% {
+    left: -200px;
+  }
+  100% {
+    left: 100%;
+  }
+}

@@ -1,0 +1,17 @@
+export const CATEGORY_LABELS = {
+  I: "Food",
+  E: "Employment",
+  H: "Housing",
+  T: "Transportation",
+  U: "Utilities",
+  M: "Medical / Healthcare",
+  N: "Entertainment",
+  C: "Education",
+  S: "Shopping",
+  D: "Debt Payment",
+  G: "Gift / Donation",
+  V: "Investment",
+  B: "Business",
+  P: "Personal Care",
+  O: "Other",
+};
